@@ -25,14 +25,15 @@ requirements:
 
   run:
     - python
-    - passlib
-    - bcrypt
-    - pycrypto
-    - flask
-    - flask-login
-    - flask-mail
-    - flask-sqlalchemy
-    - flask-wtf
+    - flask >=0.9
+    - flask-login >=0.3
+    - flask-mail >=0.9
+    - flask-sqlalchemy >=1.0
+    - flask-wtf >=0.9
+    - bcrypt >=1.1
+    - cryptograph >=2.0
+    - passlib >=1.6
+
 
 test:
   imports:
