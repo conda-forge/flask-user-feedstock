@@ -31,7 +31,7 @@ requirements:
     - flask-sqlalchemy >=1.0
     - flask-wtf >=0.9
     - bcrypt >=1.1
-    - cryptograph >=2.0
+    - cryptography >=2.0
     - passlib >=1.6
 
 
