@@ -1,8 +1,8 @@
 {% set name = "Flask-User" %}
-{% set version = "0.6.13" %}
+{% set version = "0.6.17" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "edf4b69bbaafe88dfb74c4c50d65cd61cab8fdc704e018bba265fa759799da16" %}
+{% set hash = "2bdf0021810f69f9ee11c7586ce970519d8dd8ac46df3573f59f8d3ec352f4ac" %}
 {% set build = 0 %}
 
 package:
@@ -26,15 +26,14 @@ requirements:
 
   run:
     - python
-    - flask >=0.9
-    - flask-login >=0.3
-    - flask-mail >=0.9
-    - flask-sqlalchemy >=1.0
-    - flask-wtf >=0.9
-    - bcrypt >=1.1
-    - cryptography >=2.0
-    - passlib >=1.6
-
+    - bcrypt
+    - flask
+    - flask-login
+    - flask-mail
+    - flask-sqlalchemy
+    - flask-wtf
+    - passlib
+    - pycryptodome
 
 test:
   imports:
