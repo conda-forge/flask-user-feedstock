@@ -25,6 +25,7 @@ requirements:
     - setuptools
     - flask
     - flask-login
+    - flask-wtf
     - passlib
 
   run:
