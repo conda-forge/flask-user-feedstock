@@ -27,6 +27,7 @@ requirements:
     - flask-login
     - flask-wtf
     - passlib
+    - pycryptodome
 
   run:
     - python
