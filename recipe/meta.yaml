@@ -1,8 +1,8 @@
 {%set name = "Flask-User" %}
-{%set version = "0.6.11" %}
+{%set version = "1.0.1.1" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "fc12968b8fa437942116c0f03b2346b25b9b25ee6ff63acb89f626f80aef35bc" %}
+{%set hash_val = "b14fa9e60d9d38da6fd9ae04f4aa7cc07e575db82800321ebfbb116291a88e15" %}
 {%set build_num = "0" %}
 
 package:
@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build_num }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
