@@ -23,6 +23,7 @@ requirements:
     - python
     - setuptools
     - pytest-runner
+    - flask-login
 
   run:
     - python
