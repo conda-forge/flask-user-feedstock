@@ -14,9 +14,7 @@ Summary: Customizable User Account Management for Flask: Register, Confirm email
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/flask-user-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flask-user-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/flask-user-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/flask-user-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/flask-user-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/flask-user-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/flask-user-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flask-user-feedstock)
 
 Current release info
 ====================
