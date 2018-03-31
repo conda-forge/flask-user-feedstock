@@ -28,7 +28,7 @@ requirements:
     - python
     - passlib
     - bcrypt
-    - pycrypto
+    - pycryptodome
     - flask
     - flask-login
     - flask-mail
