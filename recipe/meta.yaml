@@ -1,8 +1,8 @@
 {% set name = "Flask-User" %}
-{% set version = "0.6.20" %}
+{% set version = "1.0.1.1" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "699df643471f08f9a4d10c3b17c0a53e92bb71c7feb414bedd76c7c9263dcf5e" %}
+{% set hash_val = "b14fa9e60d9d38da6fd9ae04f4aa7cc07e575db82800321ebfbb116291a88e15" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,8 @@ requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
+    - flask-login
 
   run:
     - python
