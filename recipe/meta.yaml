@@ -1,9 +1,8 @@
-{%set name = "Flask-User" %}
-{%set version = "1.0.1.1" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "b14fa9e60d9d38da6fd9ae04f4aa7cc07e575db82800321ebfbb116291a88e15" %}
-{%set build_num = "0" %}
+{% set name = "Flask-User" %}
+{% set version = "1.0.1.1" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "b14fa9e60d9d38da6fd9ae04f4aa7cc07e575db82800321ebfbb116291a88e15" %}
 
 package:
   name: {{ name|lower }}
@@ -15,6 +14,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
@@ -22,6 +22,7 @@ requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
 
   run:
     - python
