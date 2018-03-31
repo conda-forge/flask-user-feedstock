@@ -1,9 +1,8 @@
-{%set name = "Flask-User" %}
-{%set version = "0.6.20" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "699df643471f08f9a4d10c3b17c0a53e92bb71c7feb414bedd76c7c9263dcf5e" %}
-{%set build_num = "0" %}
+{% set name = "Flask-User" %}
+{% set version = "0.6.20" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "699df643471f08f9a4d10c3b17c0a53e92bb71c7feb414bedd76c7c9263dcf5e" %}
 
 package:
   name: {{ name|lower }}
