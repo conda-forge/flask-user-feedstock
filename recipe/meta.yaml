@@ -1,6 +1,6 @@
 {% set name = "Flask-User" %}
 {% set version = "1.0.1.3" %}
-{% set compress_type = "tar.gz" %}
+{% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash_val = "3b17b1d2714d8fda9754a717ab6500dc88981f68fda4a19294381dee429b2c0f" %}
 
@@ -10,31 +10,30 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
-    - pytest-runner
+    - pip
     - flask-login
 
   run:
     - python
-    - passlib
-    - bcrypt
-    - pycrypto
-    - flask
-    - flask-login
-    - flask-mail
-    - flask-sqlalchemy
-    - flask-wtf
+    - passlib >=1.6
+    - bcrypt >=2.0
+    - cryptography >=1.6
+    - flask >=0.9
+    - flask-login >=0.2
+    - flask-mail >=0.9
+    - flask-sqlalchemy >=1.0
+    - flask-wtf >=0.9
 
 test:
   imports:
