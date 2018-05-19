@@ -14,12 +14,15 @@ Summary: Customizable User Account Management for Flask: Register, Confirm email
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/flask-user-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flask-user-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/flask-user-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/flask-user-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-user/badges/version.svg)](https://anaconda.org/conda-forge/flask-user)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flask-user/badges/downloads.svg)](https://anaconda.org/conda-forge/flask-user)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-flask--user-green.svg)](https://anaconda.org/conda-forge/flask-user) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flask-user.svg)](https://anaconda.org/conda-forge/flask-user) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flask-user.svg)](https://anaconda.org/conda-forge/flask-user) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flask-user.svg)](https://anaconda.org/conda-forge/flask-user) |
 
 Installing flask-user
 =====================
