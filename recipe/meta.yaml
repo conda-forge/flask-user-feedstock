@@ -1,8 +1,8 @@
 {% set name = "Flask-User" %}
-{% set version = "1.0.1.4" %}
+{% set version = "1.0.1.5" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "f47bccd2e159b5aec083473a6be17406f0154abd5a2f35d7b82e0ce3d46f222a" %}
+{% set hash_val = "ca6e1bffe83c4efcefac3a509daca95003c69cea373a558d6b2466e37cd5238c" %}
 
 package:
   name: {{ name|lower }}
