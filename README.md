@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About flask-user
 ================
 
@@ -18,8 +14,15 @@ Summary: Customizable User Account Management for Flask: Register, Confirm email
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/flask-user-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/flask-user-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4911&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flask-user-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
