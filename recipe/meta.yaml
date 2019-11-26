@@ -1,8 +1,8 @@
 {% set name = "Flask-User" %}
-{% set version = "1.0.1.5" %}
+{% set version = "1.0.2.1" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "ca6e1bffe83c4efcefac3a509daca95003c69cea373a558d6b2466e37cd5238c" %}
+{% set hash_val = "836502eb6a48fc4588a374eaf010974ad4d2fb02819a486efd122ef3ea4a0274" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
