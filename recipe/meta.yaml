@@ -19,14 +19,14 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - flask-login
 
   run:
     - python
-    - passlib >=1.6
+    - passlib >=1.7
     - bcrypt >=2.0
     - cryptography >=1.6
     - flask >=0.9
@@ -41,9 +41,9 @@ test:
 
 about:
   home: http://github.com/lingthio/Flask-User
-  license: BSD 2-Clause
+  license: MIT
   license_file: LICENSE.txt
-  license_family: BSD
+  license_family: MIT
   summary: 'Customizable User Account Management for Flask: Register, Confirm email, Login, Change username, Change password, Forgot password and more.'
   dev_url: http://github.com/lingthio/Flask-User
   doc_url: https://pythonhosted.org/Flask-User/
@@ -51,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - synapticarbors
