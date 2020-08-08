@@ -1,8 +1,8 @@
 {% set name = "Flask-User" %}
-{% set version = "1.0.1.5" %}
+{% set version = "1.0.2.2" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "ca6e1bffe83c4efcefac3a509daca95003c69cea373a558d6b2466e37cd5238c" %}
+{% set hash_val = "c9785febc2fc7ca15c69cfff1c8dabc2788f25043b54a33f73a6c2a9daf7fbe4" %}
 
 package:
   name: {{ name|lower }}
@@ -16,17 +16,17 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - flask-login
 
   run:
     - python
-    - passlib >=1.6
+    - passlib >=1.7
     - bcrypt >=2.0
     - cryptography >=1.6
     - flask >=0.9
@@ -41,9 +41,9 @@ test:
 
 about:
   home: http://github.com/lingthio/Flask-User
-  license: BSD 2-Clause
+  license: MIT
   license_file: LICENSE.txt
-  license_family: BSD
+  license_family: MIT
   summary: 'Customizable User Account Management for Flask: Register, Confirm email, Login, Change username, Change password, Forgot password and more.'
   dev_url: http://github.com/lingthio/Flask-User
   doc_url: https://pythonhosted.org/Flask-User/
@@ -51,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - synapticarbors
