@@ -3,7 +3,7 @@ About flask-user
 
 Home: http://github.com/lingthio/Flask-User
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-user-feedstock/blob/master/LICENSE.txt)
 
