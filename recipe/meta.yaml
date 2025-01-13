@@ -19,7 +19,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - flask-login
-
+    - setuptools
   run:
     - python >={{ python_min }}
     - passlib >=1.6
