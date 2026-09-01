@@ -1,0 +1,58 @@
+schema_version: 1
+
+context:
+  name: Flask-User
+  version: 1.0.2.2
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: c9785febc2fc7ca15c69cfff1c8dabc2788f25043b54a33f73a6c2a9daf7fbe4
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - flask-login
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - passlib >=1.6
+    - bcrypt >=2.0
+    - cryptography >=1.6
+    - flask >=0.9
+    - flask-login >=0.2
+    - flask-mail >=0.9
+    - flask-sqlalchemy >=1.0
+    - flask-wtf >=0.9
+    - email_validator
+
+tests:
+  - python:
+      imports:
+        - flask_user
+      pip_check: true
+      python_version:
+        - ${{ python_min }}
+        - "*"
+
+about:
+  license: BSD-2-Clause
+  license_file: LICENSE.txt
+  summary: "Customizable User Account Management for Flask: Register, Confirm email, Login, Change username, Change password, Forgot password and more."
+  homepage: http://github.com/lingthio/Flask-User
+  repository: http://github.com/lingthio/Flask-User
+  documentation: https://pythonhosted.org/Flask-User/
+
+extra:
+  recipe-maintainers:
+    - pmlandwehr
+    - jan-janssen
